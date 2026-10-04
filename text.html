@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Luki Predict 🤑 | VIP WinGo Signals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Mobile Non-Scrollable Layout */
+        html, body {
+            height: 100vh;
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        /* Animations */
+        @keyframes pulse-glow {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 18px rgba(234, 179, 8, 0.9), 0 0 30px rgba(37, 99, 235, 0.8);
+            }
+            50% {
+                transform: scale(1.03);
+                box-shadow: 0 0 30px rgba(234, 179, 8, 1), 0 0 45px rgba(37, 99, 235, 1);
+            }
+        }
+
+        @keyframes float-img {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-4px); }
+        }
+
+        @keyframes circle-pulse {
+            0%, 100% { box-shadow: 0 0 12px #facc15, 0 0 25px #22c55e; }
+            50% { box-shadow: 0 0 20px #facc15, 0 0 35px #3b82f6; }
+        }
+
+        .animate-btn { animation: pulse-glow 1.4s infinite ease-in-out; }
+        .animate-win-img { animation: float-img 3s infinite ease-in-out; }
+        .animate-logo { animation: circle-pulse 2s infinite ease-in-out; }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+
+    <script>
+        // Automatic 5 Seconds Redirect
+        let secondsLeft = 5;
+        const telegramUrl = "https://t.me/colortrainningunder5evalok";
+
+        const timerInterval = setInterval(() => {
+            secondsLeft--;
+            const timerDisplay = document.getElementById("count-timer");
+            if (timerDisplay) timerDisplay.innerText = secondsLeft;
+            if (secondsLeft <= 0) {
+                clearInterval(timerInterval);
+                window.location.href = telegramUrl;
+            }
+        }, 1000);
+
+        // Dynamic Winner Popups
+        const winnerList = [
+            "🎉 செல்வா இப்போது ₹5,200 வென்றார்! 💸",
+            "🔥 கார்த்திக் ₹3,800 Profit செய்தார்! 🤑",
+            "🚀 குமார் 5th Level-இல் ₹8,400 Profit! 👑",
+            "⚡ விஜய் ₹2,100 Auto-Bet மூலம் வென்றார்! 🎯"
+        ];
+
+        setInterval(() => {
+            const popupEl = document.getElementById("winning-popup");
+            if (popupEl) {
+                const randomMsg = winnerList[Math.floor(Math.random() * winnerList.length)];
+                document.getElementById("popup-msg").innerText = randomMsg;
+                popupEl.classList.remove("hidden");
+                setTimeout(() => { popupEl.classList.add("hidden"); }, 2800);
+            }
+        }, 5500);
+    </script>
+</head>
+<body class="bg-slate-950 text-white font-sans h-screen flex flex-col justify-between items-center p-2.5 select-none">
+
+    <!-- Top Alert Banner -->
+    <div class="w-full bg-gradient-to-r from-red-600 via-yellow-500 to-emerald-500 text-black font-black text-[10px] py-1 px-2 text-center rounded-lg shadow-lg uppercase tracking-wider">
+        🔥 VIP சலுகை: இலவச AUTO-BET & HACK BOT TOOL இன்று மட்டும் 100% இலவசம்!
+    </div>
+
+    <!-- Live Winner Popups -->
+    <div id="winning-popup" class="hidden fixed top-9 z-50 bg-emerald-500 text-black font-extrabold text-[10px] py-1 px-3 rounded-full shadow-2xl border border-white flex items-center space-x-2">
+        <span class="w-2 h-2 bg-black rounded-full animate-ping"></span>
+        <span id="popup-msg">🎉 செல்வா இப்போது ₹5,200 வென்றார்! 💸</span>
+    </div>
+
+    <!-- Main Container -->
+    <main class="w-full max-w-sm flex-grow flex flex-col justify-between items-center text-center my-auto py-1">
+        
+        <!-- Timer Badge -->
+        <div class="bg-slate-900 border border-yellow-400/60 rounded-full px-3 py-0.5 flex items-center space-x-1.5 shadow-inner">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <p class="text-[10px] text-gray-200">
+                டெலிகிராம் பக்கத்திற்கு செல்ல இன்னும் <span id="count-timer" class="text-yellow-400 font-black text-xs">5</span> வினாடிகள்...
+            </p>
+        </div>
+
+        <!-- Channel Title Header -->
+        <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full p-0.5 bg-gradient-to-tr from-yellow-400 via-emerald-400 to-blue-500 animate-logo mb-1">
+                <img src="logo.jpg" alt="Luki Predict Logo" class="w-full h-full object-cover rounded-full border border-slate-950">
+            </div>
+
+            <h1 class="text-2xl font-black text-yellow-400 tracking-wide flex items-center justify-center gap-1">
+                Luki Predict <span>🤑</span>
+            </h1>
+            <p class="text-emerald-400 font-extrabold text-[11px]">
+                🎯 WinGo 30s & கலர் ப்ரெடிக்‌ஷன் தமிழ் VIP Hub 🚀
+            </p>
+        </div>
+
+        <!-- Left Vertical Image + Right Punch Dialogue Box -->
+        <div class="w-full animate-win-img px-1 my-1">
+            <div class="bg-gradient-to-r from-yellow-500/20 via-slate-900 to-yellow-500/20 p-2 rounded-2xl border border-yellow-500/50 shadow-2xl flex items-center space-x-2">
+                
+                <!-- Left Side: Vertical Image -->
+                <div class="w-2/5 flex-shrink-0 relative">
+                    <img src="win.jpg" alt="Live Win Proof" class="w-full h-44 object-cover rounded-xl border border-yellow-400/70 shadow-md">
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-[8px] font-black px-1.5 py-0.2 rounded-full whitespace-nowrap border border-white">
+                        LIVE PROOF 💯
+                    </span>
+                </div>
+
+                <!-- Right Side: Motivational Tamil Punch Dialogue -->
+                <div class="w-3/5 text-left flex flex-col justify-center space-y-1.5">
+                    <div class="bg-yellow-400/10 border-l-2 border-yellow-400 p-1.5 rounded-r-lg">
+                        <p class="text-[11px] font-black leading-tight text-yellow-300">
+                            "வேடிக்கை பார்ப்பவர்கள் கடைசி வரை வேடிக்கை மட்டுமே பார்ப்பார்கள்! 💥"
+                        </p>
+                    </div>
+                    <p class="text-[10px] font-bold text-gray-200 leading-snug">
+                        துணிந்து முயற்சி செய்பவனே தினமும் ஆயிரக்கணக்கில் சம்பாதிக்கிறான்! 🤑💸
+                    </p>
+                    <div class="bg-emerald-500/20 border border-emerald-400/50 rounded-lg p-1 text-center">
+                        <p class="text-[9px] font-extrabold text-emerald-300 uppercase">
+                            ⚡ 100% loss recovery உறுதி!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Trust Features Box -->
+        <div class="glass-card w-full rounded-xl p-2 border border-yellow-500/40 text-left space-y-1 shadow-xl">
+            <div class="flex items-center space-x-2">
+                <span class="text-xs">🎯</span>
+                <p class="text-[10px] font-bold text-gray-100">99% துல்லியமான Auto-Bet & Hack Tool இலவசம்</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="text-xs">🛡️</span>
+                <p class="text-[10px] font-bold text-gray-100">5 லெவலுக்குள் 100% வெற்றி நிச்சயம் (Zero Loss)</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="text-xs">💰</span>
+                <p class="text-[10px] font-bold text-gray-100">தினமும் ₹2,000 முதல் ₹10,000 வரை உறுதியான லாபம்</p>
+            </div>
+        </div>
+
+        <!-- Telegram CTA Button -->
+        <div class="w-full">
+            <a href="https://t.me/+fZurqNVi6181M2Fl" class="animate-btn bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white font-black text-xs py-2.5 px-3 rounded-xl flex items-center justify-center space-x-2 border border-yellow-300 shadow-2xl">
+                <i class="fa-brands fa-telegram text-xl"></i>
+                <span class="tracking-wide uppercase">TELEGRAM சேனலில் இணையவும் 🚀</span>
+            </a>
+            <p class="text-[9px] text-yellow-400 font-extrabold mt-1">
+                ⚡ VIP சிக்னல்கள் பெற மேலே உள்ள பட்டனை கிளிக் செய்யவும்!
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-0.5 text-center text-[8px] text-gray-500">
+        <p>© Luki Predict 🤑 | 100% நம்பிக்கையான தமிழ் VIP டெலிகிராம் பக்கம்</p>
+    </footer>
+
+</body>
+</html>
